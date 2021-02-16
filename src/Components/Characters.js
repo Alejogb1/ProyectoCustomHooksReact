@@ -16,9 +16,9 @@ const Characters = () => {
       {fetching ? (
         <Loading />
       ) : (
-        characters.map((character) => {
+        characters.map((character) => (
           <Character key={character.id} {...character} />;
-        })
+        ))
       )}
     </Row>
   );
